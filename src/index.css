@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DriveLead CRM - Premium Automotive Design System */
+
+@layer base {
+  :root {
+    /* Base foundation - Crystal clear professional interface */
+    --background: 0 0% 100%;          /* Pure white for maximum clarity */
+    --foreground: 215 30% 12%;        /* Deep charcoal for crisp readability */
+    
+    /* Surface hierarchy - Elevated premium feel */
+    --card: 0 0% 100%;               /* Clean white cards */
+    --card-foreground: 215 30% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 30% 12%;
+    
+    /* Primary brand - Automotive excellence blue */
+    --primary: 215 100% 45%;         /* #0066FF - Vibrant automotive blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 215 100% 40%;   /* Deeper hover */
+    --primary-light: 215 100% 98%;   /* Subtle backgrounds */
+    --primary-glow: 215 100% 92%;    /* Soft accent areas */
+    
+    /* Secondary system - Professional sophistication */
+    --secondary: 214 20% 95%;        /* Premium light gray */
+    --secondary-foreground: 214 25% 25%;
+    --secondary-hover: 214 20% 90%;
+    
+    /* Muted system - Refined neutrals */
+    --muted: 214 20% 95%;
+    --muted-foreground: 214 20% 45%;
+    
+    /* Accent system - Interactive highlights */
+    --accent: 214 20% 95%;
+    --accent-foreground: 214 25% 25%;
+    
+    /* Status colors - Clear communication system */
+    --status-new: 262 83% 58%;       /* #6366F1 - Fresh purple for new leads */
+    --status-contacted: 215 100% 45%; /* #0066FF - Primary blue for contacted */
+    --status-qualified: 195 100% 50%; /* #00BFFF - Sky blue for qualified */
+    --status-followup: 35 100% 55%;   /* #FF8C00 - Orange for follow-up urgency */
+    --status-won: 142 80% 45%;        /* #10B981 - Success green for wins */
+    --status-lost: 0 84% 60%;         /* #EF4444 - Clear red for lost */
+    
+    /* Semantic colors - Crystal clear communication */
+    --success: 142 80% 45%;          /* #10B981 - Vibrant success green */
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 80% 97%;
+    --success-subtle: 142 80% 90%;
+    
+    --warning: 35 100% 55%;          /* #FF8C00 - Alert orange */
+    --warning-foreground: 0 0% 100%;
+    --warning-light: 35 100% 97%;
+    --warning-subtle: 35 100% 90%;
+    
+    --destructive: 0 84% 60%;        /* #EF4444 - Clear red */
+    --destructive-foreground: 0 0% 100%;
+    --destructive-light: 0 84% 97%;
+    --destructive-subtle: 0 84% 90%;
+    
+    /* Interface precision - Sharp professional borders */
+    --border: 214 25% 85%;           /* Crisp border definition */
+    --input: 214 25% 96%;            /* Clean input backgrounds */
+    --input-focus: 215 100% 45%;     /* Primary focus ring */
+    --ring: 215 100% 45%;            /* Consistent focus indication */
+    
+    /* Automotive luxury palette */
+    --automotive-silver: 210 15% 75%;    /* Premium silver */
+    --automotive-charcoal: 215 30% 20%;  /* Deep luxury charcoal */
+    --automotive-platinum: 214 20% 94%;  /* Elegant platinum */
+    --automotive-midnight: 215 30% 8%;   /* Midnight blue depth */
+    
+    /* Premium spacing system */
+    --spacing-unit: 8px;             /* Perfect 8px grid */
+    --radius: 10px;                  /* Smooth modern radius */
+    --radius-lg: 16px;               /* Elegant large radius */
+    
+    /* Professional typography scale */
+    --font-size-xs: 11px;            /* Fine details */
+    --font-size-sm: 13px;            /* Secondary text */
+    --font-size-base: 15px;          /* Primary readable size */
+    --font-size-lg: 17px;            /* Emphasized text */
+    --font-size-xl: 20px;            /* Section headers */
+    --font-size-2xl: 24px;           /* Page titles */
+    --font-size-3xl: 32px;           /* Hero headings */
+    
+    /* Premium depth shadows */
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08);
+    --shadow: 0 2px 8px 0 rgb(0 0 0 / 0.08), 0 1px 3px 0 rgb(0 0 0 / 0.06);
+    --shadow-md: 0 4px 16px 0 rgb(0 0 0 / 0.08), 0 2px 6px 0 rgb(0 0 0 / 0.06);
+    --shadow-lg: 0 8px 32px 0 rgb(0 0 0 / 0.12), 0 4px 16px 0 rgb(0 0 0 / 0.08);
+    --shadow-glow: 0 0 24px 0 rgb(var(--primary) / 0.15);
+    
+    /* Smooth professional transitions */
+    --transition-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.1, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    letter-spacing: -0.01em;
+  }
+  
+  /* Premium CRM interface utilities */
+  .crm-grid {
+    display: grid;
+    gap: calc(var(--spacing-unit) * 2);
+  }
+  
+  .crm-card {
+    @apply bg-card border border-border rounded-[var(--radius)] shadow-sm;
+    transition: all var(--transition-normal);
+  }
+  
+  .crm-card:hover {
+    @apply shadow-md;
+    transform: translateY(-1px);
+  }
+  
+  .crm-spacing-2 { padding: calc(var(--spacing-unit) * 2); }
+  .crm-spacing-3 { padding: calc(var(--spacing-unit) * 3); }
+  .crm-spacing-4 { padding: calc(var(--spacing-unit) * 4); }
+  .crm-spacing-6 { padding: calc(var(--spacing-unit) * 6); }
+  
+  /* Professional button enhancements */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary-hover;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+  }
+  
+  .btn-primary:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-1px);
+  }
+  
+  /* Premium status pill system */
+  .status-pill {
+    @apply inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold;
+    transition: all var(--transition-fast);
+    border: 1px solid transparent;
+  }
+  
+  .status-pill:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .status-new { 
+    background: linear-gradient(135deg, hsl(var(--status-new) / 0.12), hsl(var(--status-new) / 0.08));
+    color: hsl(var(--status-new));
+    border-color: hsl(var(--status-new) / 0.2);
+  }
+  
+  .status-contacted { 
+    background: linear-gradient(135deg, hsl(var(--status-contacted) / 0.12), hsl(var(--status-contacted) / 0.08));
+    color: hsl(var(--status-contacted));
+    border-color: hsl(var(--status-contacted) / 0.2);
+  }
+  
+  .status-qualified { 
+    background: linear-gradient(135deg, hsl(var(--status-qualified) / 0.12), hsl(var(--status-qualified) / 0.08));
+    color: hsl(var(--status-qualified));
+    border-color: hsl(var(--status-qualified) / 0.2);
+  }
+  
+  .status-followup { 
+    background: linear-gradient(135deg, hsl(var(--status-followup) / 0.12), hsl(var(--status-followup) / 0.08));
+    color: hsl(var(--status-followup));
+    border-color: hsl(var(--status-followup) / 0.2);
+  }
+  
+  .status-won { 
+    background: linear-gradient(135deg, hsl(var(--status-won) / 0.12), hsl(var(--status-won) / 0.08));
+    color: hsl(var(--status-won));
+    border-color: hsl(var(--status-won) / 0.2);
+  }
+  
+  .status-lost { 
+    background: linear-gradient(135deg, hsl(var(--status-lost) / 0.12), hsl(var(--status-lost) / 0.08));
+    color: hsl(var(--status-lost));
+    border-color: hsl(var(--status-lost) / 0.2);
+  }
+  
+  /* Professional table enhancements */
+  .crm-table {
+    @apply border-separate border-spacing-0;
+  }
+  
+  .crm-table th {
+    @apply bg-muted/50 text-muted-foreground font-semibold text-sm;
+    padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 3);
+    border-bottom: 2px solid hsl(var(--border));
+  }
+  
+  .crm-table td {
+    padding: calc(var(--spacing-unit) * 2.5) calc(var(--spacing-unit) * 3);
+    border-bottom: 1px solid hsl(var(--border));
+    transition: all var(--transition-fast);
+  }
+  
+  .crm-table tr:hover td {
+    background-color: hsl(var(--muted) / 0.3);
+  }
+  
+  /* Form input enhancements */
+  .crm-input {
+    @apply border-2 border-border bg-input focus:border-primary focus:ring-2 focus:ring-primary/20;
+    transition: all var(--transition-fast);
+  }
+  
+  .crm-input:focus {
+    box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+  }
+}
