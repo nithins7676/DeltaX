@@ -27,7 +27,7 @@ The application includes 4 main screens as required by the assignment:
 - **Business Manager**: Analytical tools for oversight and strategic decision-making
 
 ## 🌐 Live Demo
-**Live Application**: [https://drivelead-gy8pw6kr4-nithins7676s-projects.vercel.app](https://drivelead-gy8pw6kr4-nithins7676s-projects.vercel.app)
+**Live Application**: [https://drivelead.app](https://drivelead-lake.vercel.app/)
 
 ## 📋 DeltaX Assignment Requirements Met
 ✅ **Desktop web application** - Optimized for desktop screens as specified  
